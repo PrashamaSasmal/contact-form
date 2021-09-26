@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form With JavaScript</title>
+<style>
+*{
+      padding:0;
+      margin:0;
+      box-sizing:border-box;
+      
+}
+#form-container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    background:url("sea.jfif") no-repeat center center/cover;
+   
+   
+}
+
+#form-head{
+    text-align: center;
+    color: #3cd1d8;
+    text-shadow: 3px 4px 2px black;
+    font-size: 3rem;
+    background-color: #e0efed;
+    padding: 18px 18px;
+    margin-bottom:20px;
+}
+#form-container{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 12px 10px 15px 6px darkblue;
+    height: 530px;
+    border-left:2px solid #17178c;
+background:url("sea.jfif") no-repeat center center/cover;
+opacity: .9999999;
+    
+}
+
+.form-line{
+    text-align: center;
+    padding:20px;
+}
+form input{
+    width:50%;
+    padding:12px;
+    border-radius:10px;
+}
+#div3{
+    margin-left:-19px;
+}
+#div4{
+    margin-left:0px;
+}
+@media (max-width:850px){
+#form-container{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 5px 4px 4px 2px grey;
+    height: 100%;
+    border-left:2px solid #17178c;
+}
+}
+@media (max-width:400px){
+form input{
+    height:100%;
+    width:100%;
+   
+}
+#div3{
+    margin-left:0px;
+}
+#div4{
+    margin-left:0px;
+}
+
+}
+
+@media (max-width:200px){
+#form-head{
+
+    font-size:2rem;
+ }}
+@media (max-width:100px){
+#form-head{
+    
+    font-size:10px;
+    text-shadow:none;
+ }}
+
+</style>
+</head>
+<body>
+
+<div id="form-container">
+<h1  id="form-head"> Contact With Us</h1>
+<form action="" method="post">
+<div class="form-line" id="div1">
+       <label for="input1">Name</label>
+       <input type="text" id="input1" required>
+</div>
+<div class="form-line" id="div2">
+       <label for="input2"> Email</label>
+       <input type="email" id="input2" required>
+</div>
+<div class="form-line" id="div3">
+       <label for="input3"> Password</label>
+       <input type="password" id="input3" required >
+</div>
+<div class="form-line" id="div4">
+       <label for="input4">Confirm Password </label>
+       <input type="password" id="input4" required>
+</div>
+
+<div class="form-line" id="div5">
+      
+     <input type="submit" id="input1" value="click">
+</div>
+
+<form>
+</div>
+</body>
